@@ -9,6 +9,24 @@ body{
   font-size: 18px;
   margin: 0;
   padding: 0;
+  font-family: "Lato", serif;
+
+}
+
+p {
+  color: #999;
+
+}
+
+h1 {
+  font-size: 30px;
+
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bolder;
+
 }
 
 .nav{
@@ -16,14 +34,15 @@ body{
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
 
+  display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
 
   font-size: 12px;
   background-color: #ffffff;
-  padding: 20px;
+  padding-top: 20px;
   margin-left: 20px;
-  padding-right: 100px;
+  padding-right: 30px;
 
 }
 
@@ -34,14 +53,17 @@ body{
 	margin: none;
   display: inline-block;
   text-align: left;
-  padding-left: 150px;
+
 
 }
 
 nav {
-  grid-column: 2 s/ span 1;
+  grid-column: 2 / span 1;
   grid-row: 1 / -1;
   text-align: right;
+  font-size: 18px;
+  padding-top: 20px;
+
 
 }
 
@@ -50,7 +72,6 @@ nav ul{
 }
 
 nav li{
-  padding-right: 20px;
   display: inline-block;
 }
 
@@ -86,6 +107,12 @@ nav a.active {
   top:0px;
 }
 
+.date {
+  color: black;
+  font-weight: bold;
+
+}
+
 #footer {
   padding: 60px 0 40px;
   display: flex;
@@ -96,10 +123,9 @@ nav a.active {
   width: 100%;
 }
 
-h1 {
-  font-size: 30px;
 
-}
+
+
 
 
 /* home page styling */
@@ -111,31 +137,45 @@ h1 {
 
 }
 
-.container{
+.container {
   grid-column: 1 / -1;
   grid-row: 2 / span 1;
 
   display: grid;
-  grid-template-columns: 12% 38% 38% 12%;
-  grid-template-rows: 400px 400px;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 8% 42% 50%;
 
+}
+.important_about {
+  color: black;
 }
 
 .about-image {
-  padding-top: 20px;
+  padding-top: 80px;
   grid-column: 2 / 3;
   grid-row: 1 / span 1;
 
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .summary {
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding-bottom: 90px;
 }
 
 .news {
-  grid-column: 3 / 4;
-  grid-row: 1 / -1;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  padding-top: 90px;
+}
+
+
+a {
+  text-decoration: none;
+  background-color: transparent;
 }
 
 ul.timeline {
@@ -168,4 +208,61 @@ ul.timeline > li:before {
     width: 10px;
     height: 10px;
     z-index: 400;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+}
+
+@media screen and (min-width: 1000px){
+
+  .nav {
+      padding-right: 100px;
+  }
+
+  #main {
+    padding-left: 150px;
+
+  }
+
+  nav {
+    font-size: 18px;
+
+  }
+
+  nav li{
+    padding-right: 20px;
+  }
+
+
+  .container{
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+
+    display: grid;
+    grid-template-columns: 12% 38% 38% 12%;
+    grid-template-rows: 400px 400px;
+
+  }
+
+  .about-image {
+    padding-top: 20px;
+    grid-column: 2 / 3;
+    grid-row: 1 / span 1;
+
+    margin-left: 0;
+    margin-right: 0;
+    }
+  }
+
+  .summary {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    padding-bottom: 0px;
+  }
+
+  .news {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+    padding-top: 0px;
+  }
 }
