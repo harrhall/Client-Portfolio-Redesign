@@ -75,7 +75,7 @@ nav {
   grid-column: 2 / span 1;
   grid-row: 1 / -1;
   text-align: right;
-  font-size: 12px;
+  font-size: 15px;
   padding-top: 20px;
 
 
@@ -217,7 +217,9 @@ ul.timeline > li:before {
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
+
 }
+
 
 @media screen and (min-width: 1000px){
 
