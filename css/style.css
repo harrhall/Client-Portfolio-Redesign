@@ -9,24 +9,39 @@ body{
   font-size: 18px;
   margin: 0;
   padding: 0;
-  font-family: "Lato", serif;
+  font-family: 'Crimson Text', serif;
 
 }
 
 p {
   color: #828282;
+  font-size: 12px;
 
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 25px;
 
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 10px;
+  padding-top: 8px;
+  font-style: italic;
+}
+
+h3 {
+  padding-top: 20px;
+  font-size: 15px;
   font-weight: bolder;
 
+}
+
+
+
+.container {
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
 }
 
 .nav{
@@ -54,14 +69,13 @@ h2 {
   display: inline-block;
   text-align: left;
 
-
 }
 
 nav {
   grid-column: 2 / span 1;
   grid-row: 1 / -1;
   text-align: right;
-  font-size: 18px;
+  font-size: 12px;
   padding-top: 20px;
 
 
@@ -126,8 +140,6 @@ nav a.active {
 
 
 
-
-
 /* home page styling */
 
 .wrapper{
@@ -141,34 +153,28 @@ nav a.active {
   grid-column: 1 / -1;
   grid-row: 2 / span 1;
 
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-rows: 8% 42% 50%;
-
 }
 .important_about {
   color: black;
 }
 
 .about-image {
-  padding-top: 80px;
+  padding-top: 20px;
   grid-column: 2 / 3;
   grid-row: 1 / span 1;
+  text-align: center;
 
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
 .summary {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   padding-bottom: 90px;
 }
 
 .news {
   grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-row: 3 / -1;
   padding-top: 90px;
 }
 
@@ -215,6 +221,26 @@ ul.timeline > li:before {
 
 @media screen and (min-width: 1000px){
 
+  h1 {
+    font-size: 30px;
+
+  }
+
+  h2{
+    padding-top: 5px;
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+
+  p {
+    font-size: 16px;
+
+  }
+
   .nav {
       padding-right: 100px;
   }
@@ -235,9 +261,6 @@ ul.timeline > li:before {
 
 
   .container{
-    grid-column: 1 / -1;
-    grid-row: 2 / span 1;
-
     display: grid;
     grid-template-columns: 12% 38% 38% 12%;
     grid-template-rows: 400px 400px;
@@ -245,12 +268,11 @@ ul.timeline > li:before {
   }
 
   .about-image {
-    padding-top: 20px;
     grid-column: 2 / 3;
     grid-row: 1 / span 1;
 
-    margin-left: 0;
-    margin-right: 0;
+    text-align: left;
+
     }
   }
 
