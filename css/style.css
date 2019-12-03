@@ -223,7 +223,7 @@ ul.timeline > li:before {
   grid-template-rows: 1fr 1fr;
 }
 
-.contact-image {
+.contact_image {
   display: none;
 }
 
@@ -254,15 +254,33 @@ form{
   font-size: 17px;
 }
 
-input{
+input {
   padding: 0;
 }
 
-#cont_building_image{
+.contact_building_img {
   display: none;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
+/*Contact page styling*/
+  .contact_image {
+    display: inline-block;
+    padding-top: 5%;
+    grid-column: 2 / 3;
+    grid-row: 1 / span;
+    text-align: center;
+  }
+
+  .contact_text_info {
+    padding-top: 5%;
+    grid-column: 3 / 4;
+  }
+  .email_form{
+    padding-top: 5%;
+    grid-row: 2 / span;
+  }
+
 
 }
 
@@ -320,8 +338,6 @@ input{
     grid-row: 1 / span 1;
 
     text-align: left;
-
-    }
   }
 
   .summary {
@@ -335,4 +351,59 @@ input{
     grid-row: 1 / -1;
     padding-top: 0px;
   }
+
+/*Contact page*/
+.contact_container{
+  display: grid;
+  /*                      1.    2.  3.  4.  5.   6.*/
+  grid-template-columns: 12.5% 1fr 1fr 1fr 1fr 12.5%;
+  grid-template-rows: 1fr 1fr;
+}
+
+.contact_image {
+  display: inline-block;
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+#rose{
+  width: 50%;
+  padding-left: 15%;
+}
+
+
+.contact_text_info {
+  grid-column: 4 / 6;
+  text-align: left;
+  padding-left: 10%;
+}
+
+form {
+  border: 2.3px dashed #3F3E3E;
+  padding: 4% 10% 4% 10%;
+  border-radius: 7%;
+}
+
+#form_title {
+  font-size: 1.2em;
+}
+
+.email_form{
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.contact_building_img{
+  display: inline-block;
+  grid-column: 4 / 6;
+  grid-row: 2;
+  padding-left: 10%;
+}
+
+#cont_building_image{
+  width: 80%;
+  height: auto;
+}
+
+
 }
