@@ -216,6 +216,52 @@ ul.timeline > li:before {
     z-index: 400;
 }
 
+/*contact page styling*/
+.contact_container{
+  display: grid;
+  grid-template-columns: 12% 38% 38% 12%;
+  grid-template-rows: 1fr 1fr;
+}
+
+.contact-image {
+  display: none;
+}
+
+.contact_text_info {
+  color: #828282;
+  padding-top: 1%;
+  grid-column: 2 / -2;
+  text-align: center;
+  grid-row: 1 / span;
+  line-height: 1.3em;
+}
+
+.email_form{
+  grid-column: 2 / -2;
+  grid-row: 2 / span;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+form{
+  display:inline-block;
+  text-align: left;
+}
+
+.info_labels, label, #form_title {
+  color: #5C5C5C;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+input{
+  padding: 0;
+}
+
+#cont_building_image{
+  display: none;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1000px) {
 
 }
