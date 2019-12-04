@@ -424,6 +424,7 @@ form {
 .email_form{
   grid-column: 2 / 3;
   grid-row: 3 / -1;
+  padding-top: 8%;
 }
 
 .contact_building_img{
@@ -433,7 +434,8 @@ form {
 }
 
 #cont_building_image{
-  width: 100%;
+  padding-top: 8%;
+  width: 75%;
   height: auto;
 }
 
