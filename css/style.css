@@ -125,15 +125,21 @@ nav a.active {
   font-weight: bold;
 
 }
-
-#footer {
+.footer {
+  display: inline-block;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  /*position: static;
+  bottom: 0;
+  left: 0;
   padding: 60px 0 40px;
   display: inline-block;
   background-color: white;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
+  width: 100%;*/
 }
 
 
