@@ -279,7 +279,7 @@ form{
 }
 
 .info_labels, label, #form_title {
-  color: #5C5C5C;
+  color: black;
   font-weight: bold;
   font-size: 17px;
 }
@@ -290,6 +290,12 @@ input {
 
 .contact_building_img {
   display: none;
+}
+
+form {
+  border: 2.3px dashed #adacac;
+  padding: 4% 10% 4% 10%;
+  border-radius: 7%;
 }
 
 @media screen and (min-width: 600px) {
@@ -407,11 +413,6 @@ input {
   }
 
 /*Contact page*/
-form {
-  border: 2.3px dashed #3F3E3E;
-  padding: 4% 10% 4% 10%;
-  border-radius: 7%;
-}
 
 .email_form{
   grid-column: 2 / 3;
