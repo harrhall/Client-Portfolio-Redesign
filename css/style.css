@@ -160,6 +160,7 @@ nav a.active {
 }
 .important_about {
   color: black;
+  font-size: 17px;
 }
 
 .about-image {
@@ -182,7 +183,7 @@ nav a.active {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   padding-right: 2%;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 
@@ -409,7 +410,7 @@ form {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
     padding-bottom: 0;
-    line-height: 1.4em;
+    line-height: 1.75em;
   }
 
   .news {
