@@ -395,13 +395,13 @@ form {
 
 .email_form{
   grid-column: 2 / 3;
-  grid-row: 2 / -1;
+  grid-row: 3 / -1;
 }
 
 .contact_building_img{
   display: inline-block;
   grid-column: 3 / 4;
-  grid-row: 2 / -1;
+  grid-row: 3 / -1;
 }
 
 #cont_building_image{
