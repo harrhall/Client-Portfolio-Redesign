@@ -283,7 +283,7 @@ form{
   text-align: left;
 }
 
-.info_labels, label, #form_title {
+label, #form_title {
   color: black;
   font-weight: bold;
   font-size: 17px;
