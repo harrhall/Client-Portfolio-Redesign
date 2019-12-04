@@ -299,7 +299,7 @@ input {
 }
 
 form {
-  border: 2.3px dashed #adacac;
+  border: 2.3px solid #adacac;
   padding: 4% 10% 4% 10%;
   border-radius: 7%;
 }
