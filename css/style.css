@@ -128,11 +128,11 @@ nav a.active {
 
 #footer {
   padding: 60px 0 40px;
-  display: flex;
+  display: inline-block;
+  background-color: white;
   align-items: center;
   justify-content: center;
   text-align: center;
-
   width: 100%;
 }
 
