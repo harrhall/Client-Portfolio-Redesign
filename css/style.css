@@ -181,7 +181,6 @@ nav a.active {
 .summary {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-  /* padding-bottom: 90px; */
   padding-right: 2%;
   line-height: 1em;
 }
@@ -190,7 +189,6 @@ nav a.active {
 .news {
   grid-column: 2 / 3;
   grid-row: 3 / -1;
-  /* padding-top: 90px; */
 }
 
 
@@ -410,14 +408,14 @@ form {
   .summary {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    padding-bottom: 0px;
-    line-height: 1.5em;
+    padding-bottom: 0;
+    line-height: 1.4em;
   }
 
   .news {
     grid-column: 3 / 4;
     grid-row: 1 / -1;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
 /*Contact page*/
