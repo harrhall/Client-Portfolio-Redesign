@@ -387,3 +387,20 @@ form {
 
 
 }
+/*Publications and Press Styling*/
+.year{
+  font-weight: bold;
+  font-size: 28px;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  font-style: italic;
+}
+.pub{
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.pub1{
+  padding-left: 7%;
+  padding-right: 7%;
+}
