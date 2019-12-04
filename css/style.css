@@ -216,6 +216,7 @@ ul.timeline > li:before {
     z-index: 400;
 }
 
+
                               /*contact page styling*/
 /*.contact_container{
   display: grid;
@@ -388,10 +389,15 @@ form {
 
 }
 /*Publications and Press Styling*/
+.publications {
+  padding-top: 40px;
+  grid-column: 2 / span 2;
+  grid-row: 1 / 3;
+}
 .year{
   font-weight: bold;
   font-size: 28px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   padding-bottom: 15px;
   font-style: italic;
 }
