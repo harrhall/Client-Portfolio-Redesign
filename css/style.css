@@ -33,7 +33,6 @@ h3 {
   padding-top: 20px;
   font-size: 15px;
   font-weight: bolder;
-  color: #101010;
 
 }
 
@@ -160,7 +159,6 @@ nav a.active {
 }
 .important_about {
   color: black;
-  font-size: 17px;
 }
 
 .about-image {
@@ -168,13 +166,7 @@ nav a.active {
   grid-column: 2 / 3;
   grid-row: 1 / span 1;
   text-align: center;
-  padding-left: 5%;
-  display: block;
-  width: 320px;
 
-  overflow: hidden;
-
-  justify-content: center;
 
 
 }
@@ -182,14 +174,16 @@ nav a.active {
 .summary {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  /* padding-bottom: 90px; */
   padding-right: 2%;
-  line-height: 1.2em;
+  line-height: 1em;
 }
 
 
 .news {
   grid-column: 2 / 3;
   grid-row: 3 / -1;
+  /* padding-top: 90px; */
 }
 
 
@@ -240,25 +234,20 @@ ul.timeline > li:before {
 
 .year{
   font-weight: bold;
-  font-size: 1.5em;
-  padding-top: 3%;
-  padding-bottom: 1%;
+  font-size: 28px;
+  /* padding-left: 30px; */
+  padding-bottom: 15px;
   font-style: italic;
 }
 .pub{
-  padding-bottom: 1%;
-  font-size: 1.2em;
+  padding-bottom: 10px;
+  font-size: 20px;
   text-decoration: underline;
 }
 .pub1{
   padding-left: 7%;
   padding-right: 7%;
 }
-
-ul.info_l > li  {
-  padding: 1% 0 2% 7.5%;
-}
-
 
 /*contact page styling*/
 
@@ -276,7 +265,6 @@ ul.info_l > li  {
 .email_form{
   text-align: center;
   line-height: 2.5em;
-  padding-top: 2%;
 }
 
 form{
@@ -284,8 +272,8 @@ form{
   text-align: left;
 }
 
-label, #form_title {
-  color: black;
+.info_labels, label, #form_title {
+  color: #5C5C5C;
   font-weight: bold;
   font-size: 17px;
 }
@@ -298,22 +286,7 @@ input {
   display: none;
 }
 
-form {
-  border: 2.3px solid #adacac;
-  padding: 4% 10% 4% 10%;
-  border-radius: 7%;
-}
-
 @media screen and (min-width: 600px) {
-
-  /* home page styling */
-
-  .about-image {
-    padding-left: 0;
-    width: 500px;
-    overflow: hidden;
-
-  }
 
   /*Contact page styling*/
   .contact_image {
@@ -342,7 +315,6 @@ form {
   .email_form{
     grid-column: 2 / -1;
     grid-row: 2 / -1;
-    padding-top: 0;
   }
 
 }
@@ -401,30 +373,31 @@ form {
     grid-row: 1 / span 1;
 
     text-align: left;
-    width: 100%;
-
-    overflow: auto;
   }
 
   .summary {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    padding-bottom: 0;
-    line-height: 1.75em;
+    padding-bottom: 0px;
+    line-height: 1.5em;
   }
 
   .news {
     grid-column: 3 / 4;
     grid-row: 1 / -1;
-    padding-top: 0;
+    padding-top: 0px;
   }
 
 /*Contact page*/
+form {
+  border: 2.3px dashed #3F3E3E;
+  padding: 4% 10% 4% 10%;
+  border-radius: 7%;
+}
 
 .email_form{
   grid-column: 2 / 3;
   grid-row: 3 / -1;
-  padding-top: 8%;
 }
 
 .contact_building_img{
@@ -434,8 +407,7 @@ form {
 }
 
 #cont_building_image{
-  padding-top: 8%;
-  width: 75%;
+  width: 100%;
   height: auto;
 }
 
