@@ -167,7 +167,7 @@ nav a.active {
   grid-column: 2 / 3;
   grid-row: 1 / span 1;
   text-align: center;
-
+  padding-left: 1%;
   display: block;
   width: 320px;
 
@@ -277,6 +277,7 @@ ul.info_l > li  {
 .email_form{
   text-align: center;
   line-height: 2.5em;
+  padding-top: 2%;
 }
 
 form{
@@ -309,7 +310,7 @@ form {
   /* home page styling */
 
   .about-image {
-
+    padding-left: 0;
     width: 500px;
     overflow: hidden;
 
@@ -342,6 +343,7 @@ form {
   .email_form{
     grid-column: 2 / -1;
     grid-row: 2 / -1;
+    padding-top: 0;
   }
 
 }
