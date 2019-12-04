@@ -53,6 +53,8 @@ h3 {
   padding-left: 20px;
   padding-right: 30px;
 
+  border-bottom: 6px solid #adacac;
+
 }
 
 #main {
@@ -129,8 +131,16 @@ nav a.active {
   justify-content: center;
   text-align: center;
   width: 100%;
+
+  border-top: 6px solid #adacac;
 }
 
+.fas, .fab {
+    color: #ffb8e2 !important;
+    margin: 0px 20px 10px 20px;
+    font-size: 30px;
+
+}
 
 
 
@@ -139,7 +149,7 @@ nav a.active {
 .wrapper{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 1fr 80px;
+  grid-template-rows: 110px 1fr 80px;
 
 }
 
@@ -187,7 +197,7 @@ ul.timeline {
 }
 ul.timeline:before {
     content: ' ';
-    background: #d4d9df;
+    background: #adacac;
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -276,34 +286,35 @@ input {
 }
 
 @media screen and (min-width: 600px) {
-/*Contact page styling*/
-.contact_image {
-  display: inline-block;
-  grid-column: 2 / 3;
-  grid-row: 1 / span 1;
-}
 
-#rose{
-  width: 50%;
-  padding-top: 10%;
-  padding-left: 25%;
-}
+  /*Contact page styling*/
+  .contact_image {
+    display: inline-block;
+    grid-column: 2 / 3;
+    grid-row: 1 / span 1;
+  }
 
-.contact_text_info {
-  grid-column: 3 / 4;
-  grid-row: 1 / span 1;
-  text-align: left;
-  padding-top: 10%;
-}
+  #rose{
+    width: 50%;
+    padding-top: 10%;
+    padding-left: 25%;
+  }
 
-#form_title {
-  font-size: 1.2em;
-}
+  .contact_text_info {
+    grid-column: 3 / 4;
+    grid-row: 1 / span 1;
+    text-align: left;
+    padding-top: 10%;
+  }
 
-.email_form{
-  grid-column: 2 / -1;
-  grid-row: 2 / -1;
-}
+  #form_title {
+    font-size: 1.2em;
+  }
+
+  .email_form{
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+  }
 
 }
 
